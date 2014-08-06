@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JSON5 Lint</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<style>
+        #json5input {
+            width: 100%; 
+            height: 400px;
+            padding: 10px; 
+            box-sizing: border-box;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+	
+		<div class="navbar">
+			<div class="navbar-inner">
+				<a class="brand" href="#">JSON5 Lint</a>
+				<ul class="nav">
+				  <li class="active"><a href="#">Home</a></li>
+				</ul>
+		  </div>
+		</div> <!-- /navbar -->
+
+        <div id="alert-template" style="display:none">
+            <div class="box alert alert-block">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <span class="message"></span>
+            </div>
+        </div>
+
+		<div class="row">
+			<div class="span12">
+                <textarea id="json5input"></textarea>
+            </div> <!-- /span12 -->
+		</div> <!-- /row -->
+		
+		<div class="row">
+			<div class="span11" id="alert-container">
+            </div>
+			<div class="span1">
+                <button class="btn btn-primary" id="btn-lint">Check</button>
+            </div>
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+	
+	<script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
